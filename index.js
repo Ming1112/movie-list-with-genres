@@ -74,8 +74,13 @@
             <img class="card-img-top " src="${POSTER_URL}${item.image}" alt="Card image cap">
             <div class="card-body movie-item-body">
               <h6 class="card-title">${item.title}</h6>
+              <div class="d-flex flex-row flex-wrap">
         `
+      for (let i = 0; i < item.genres.length; i++) {
+        htmlContent += `<div class="genresIcon">${genresTypes[item.genres[i]]}</div>`
+      }
       htmlContent += `
+              </div>
             </div >
           </div >
         </div >
