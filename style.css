@@ -1,0 +1,7 @@
+#display-mode i:hover {
+  cursor: pointer;
+}
+
+.card-body {
+  padding: 12px;
+}
